@@ -13,7 +13,6 @@ let tasksArray = [];
 // Form submission handler
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("Form submitted");
     formValidation();
     
 });

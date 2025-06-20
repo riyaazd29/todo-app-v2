@@ -22,9 +22,28 @@ const formValidation = () => {
     if (taskTitle.value === "") {
         taskValidationError.textContent = "Please enter a task title.";
     } else {
-        console.log ("Validation successful! Task is ready to be saved.");
         taskValidationError.textContent = "";
-        // saveTask();
+        saveTask();
+        resetForm();
         // renderTasks();
     }
 };
+
+// Save task
+const saveTask = () => {
+    tasksArray.push ({
+        taskTitle: taskTitle.value,
+        taskDueDate: taskDueDate.value,
+        taskDescription: taskDescription.value
+    })
+
+    localStorage.setItem("tasksArray", JSON.stringify(tasksArray));
+    console.log(tasksArray);
+}
+
+// Reset form
+const resetForm = () => {
+    taskTitle.value = "";
+    taskDueDate.value = "";
+    taskDescription.value = "";
+}

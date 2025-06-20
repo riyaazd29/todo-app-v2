@@ -14,6 +14,18 @@ let tasksArray = [];
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log("Form submitted");
-    // formValidation();
-    // renderTasks();
-})
+    formValidation();
+    
+});
+
+// Form validation
+const formValidation = () => {
+    if (taskTitle.value === "") {
+        taskValidationError.textContent = "Please enter a task title.";
+    } else {
+        console.log ("Validation successful! Task is ready to be saved.");
+        taskValidationError.textContent = "";
+        // saveTask();
+        // renderTasks();
+    }
+};

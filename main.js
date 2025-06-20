@@ -26,6 +26,10 @@ const formValidation = () => {
         saveTask();
         resetForm();
         renderTasks();
+
+        // Close the modal
+        addTask.setAttribute('data-te-modal-dismiss', 'modal');
+        addTask.click();
     }
 };
 

@@ -16,4 +16,4 @@ taskForm.addEventListener("submit", (e) => {
     console.log("Form submitted");
     // formValidation();
     // renderTasks();
-}
+})

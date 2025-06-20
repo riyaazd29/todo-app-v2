@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    /* background-color: #e5e5e5; */
+}
+
+.app {
+    width: 300px;
+    height: 500px;
+    /* overflow: auto; */
+    /* border: 2px solid royalblue;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white; */
+}
+
+#addNew {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(65, 105, 225, 0.25);
+}
+
+#addNew i {
+    background-color: rgba(65, 105, 225, 0.75);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#tasks {
+    display: grid;
+    gap: 14px;
+}
+
+#tasks div {
+    /* background-color: rgba(65, 105, 225, 0.25);
+    border: 2px solid royalblue;
+    border-radius: 8px;
+    padding: 5px; */
+    display: grid;
+    gap: 4px;
+}
+
+.options {
+    justify-self: end;
+    display: flex;
+    gap: 15px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+.options i {
+    /* color: royalblue; */
+    cursor: pointer;
+}
+
+/* Modal Styling */
+
+.modal-content {
+    border: 2px solid royalblue;
+    border-radius: 8px;
+    padding: 10px;
+}
+
